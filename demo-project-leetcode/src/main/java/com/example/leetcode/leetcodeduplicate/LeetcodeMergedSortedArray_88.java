@@ -1,8 +1,8 @@
-package com.example.leetcode.leetcode;
+package com.example.leetcode.leetcodeduplicate;
 
 import java.util.Arrays;
 
-public class MergedSortedArrayLeetcode88 {
+public class LeetcodeMergedSortedArray_88 {
     public static void main(String str[])
     {
         int  nums1[] = {1,2,3,0,0,0};

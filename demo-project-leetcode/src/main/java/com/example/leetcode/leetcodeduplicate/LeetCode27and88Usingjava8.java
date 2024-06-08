@@ -1,7 +1,6 @@
-package com.example.leetcode.leetcode;
+package com.example.leetcode.leetcodeduplicate;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class LeetCode27and88Usingjava8 {
     public static void main(String str[])

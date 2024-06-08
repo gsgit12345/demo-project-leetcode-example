@@ -1,7 +1,6 @@
-package com.example.leetcode.leetcode;
+package com.example.leetcode.leetcodeduplicate;
 
 import java.util.Arrays;
-import java.util.stream.Collector;
 
 public class LeetCoderemoveelement27 {
     public static void main(String str[])

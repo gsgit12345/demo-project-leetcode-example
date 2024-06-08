@@ -1,5 +1,7 @@
 package com.example.leetcode.numeric;
 
+import java.util.Arrays;
+
 //https://www.youtube.com/watch?v=1r8kzrXJiUk&list=PLjOcsOwEjb12G3uwXNdzyyIs0tNql-2Am&index=5
 //https://www.youtube.com/watch?v=YDlv6RnoSSA
 public class MajorityElementinArrayLeetCode {
@@ -34,5 +36,12 @@ public class MajorityElementinArrayLeetCode {
             }
         }
         return candidate;
+    }
+    public static  int mazorityUsingSorting(int array[])
+    {
+      //  https://www.youtube.com/watch?v=ws8KGpc4H08&t=1s
+        Arrays.sort(array);
+        return array[(int)array.length/2];
+
     }
 }
