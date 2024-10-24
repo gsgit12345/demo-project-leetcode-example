@@ -15,10 +15,10 @@ public class CheckIfParanthesisIsBalancedOrNotLeetCode_20 {
         String input3 = "([])";
         Stack<Character> characterStack = new Stack<>();
         //  isParanthesisBalancedLeet_20(characterStack, input1);
-        boolean result = isParanthesisBalancedLeet_20(characterStack, input3);
-        System.out.println("result is::" + result);
+      //  boolean result = isParanthesisBalancedLeet_20(characterStack, input3);
+       // System.out.println("result is::" + result);
         boolean result2=  handleCharacterWithoutStack(input3);
-        System.out.println("result2 is::" + result);
+        System.out.println("result2 is::" + result2);
 
     }
 
@@ -58,16 +58,16 @@ public class CheckIfParanthesisIsBalancedOrNotLeetCode_20 {
     public static boolean handleCharacterWithoutStack(String ch) {
         char[] charArray = ch.toCharArray();
         char stack[] = new char[charArray.length];
-        int i = 0;
+        int i = -1;
         for (char c : charArray) {
-            if (c == '(' || c == '{' || c == '[') {
+            if (c == '(' || c == '{' || c == '[')
                 stack[++i] = c;
-            } else {
-                if (i >= 0 && c == ')' && stack[i] == '(' || c == '}' && stack[i] == '{' || c == ']' && stack[i] == '[') {
+             else {
+                if (i >= 0 && ((stack[i] == '(' && c == ')') || (stack[i] == '{' && c == '}') || (stack[i] == '[' && c == ']')))
                     i--;
-                } else {
-                    return false;
-                }
+                    else
+                        return false;
+
             }
         }
         return i == -1;
