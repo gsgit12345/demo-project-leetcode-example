@@ -14,31 +14,11 @@ public class FindFirstIndexInArray {
     }
 
     public static int findFirstIndex(int array[], int idx, int num) {
-        if (idx == array.length) {
-            return -1;
-        }
-        if (array[idx] == num) {
-            return idx;
-        } else {
-            int fidx = findFirstIndex(array, idx + 1, num);
-            return fidx;
-        }
-        // return -1;
+return 0;
     }
 
     public static int firstIndexUsingIterativeWay(int array[], int idx, int num) {
-        if (array.length == 1)
-            return 0;
-        boolean flag = false;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == num) {
-                flag = true;
-                return i;
-            }
-            if (flag)
-                break;
-        }
-        return -1;
+return 0;
     }
     public static int firstIndexUsingBinary(int array[], int idx, int num) {
         return 0;

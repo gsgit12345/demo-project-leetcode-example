@@ -12,19 +12,6 @@ public class FindLastIndexInArray {
     }
 
     public static int findTheLastIndexInArray(int array[], int idx, int num) {
-        if (idx == array.length-1) {
-            return -1;
-        }
-        int fidx = findTheLastIndexInArray(array, idx + 1, num);
-
-        if (fidx == -1) {
-            if (array[idx] == num) {
-                return idx;
-            } else {
-                return -1;
-            }
-        } else {
-            return fidx;
-        }
+        return 0;
     }
 }

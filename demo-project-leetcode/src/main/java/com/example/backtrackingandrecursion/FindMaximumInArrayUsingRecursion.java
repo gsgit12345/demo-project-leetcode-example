@@ -14,27 +14,12 @@ public class FindMaximumInArrayUsingRecursion {
 
     public static int findMax(int array[], int index)    // array,0,array,1,
     {
-        if (index == array.length - 1) {
-            return array[index];
-        }
-
-        int num = findMax(array, index + 1);
-        if (num > array[index]) {
-            return num;
-        } else {
-            return array[index];
-        }
+        return 0;
     }
 
     public static int findMaximum(int array[]) {
 
-        int max = array[0];
-        for (int i = 1; i < array.length; i++)
-            if (max < array[i])
-                max = array[i];
 
-
-        return max;
-
+return 0;
     }
 }

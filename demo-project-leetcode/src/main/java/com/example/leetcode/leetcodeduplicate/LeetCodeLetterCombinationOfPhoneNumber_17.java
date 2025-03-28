@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LeetCodeLetterCombinationOfPhoneNumber_17 {
+    //https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+    //https://www.youtube.com/watch?v=3fjt19bjs3A&list=PL-Jc9J83PIiFxaBahjslhBD1LiJAV7nKs&index=27
     public static void main(String str[]) {
         //String  s="";
         // possibleWords(s,"");
